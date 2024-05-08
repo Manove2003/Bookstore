@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    background-color:hsl(184, 100%, 27%);
+    align-items: center;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.logoandimg{
+
+    margin-left: 1.2rem;
+}
+.logo{
+    font-size: 30px;
+    color:black;
+}
+.logo span{
+    color:#0dff00;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+
+}
+.home,.addBook,.viewBook{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.mobile-menu-icon{
+    display: none;
+}
+    /* max-width: 856px; 952 */
+
+@media screen and (max-width:600px) {
+    .logoandimg{
+        display: flex;
+        position: absolute;
+        top: 20px;
+        left: 15px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-links-mobile{
+        position:absolute;
+        display: block;
+        list-style: none;
+        background-color:  hsl(184, 100%, 29%);;
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+    }
+    .home,.addBook,.viewBook{
+        color: white;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5 ease;
+    }
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        background-color: hsl(184, 100%, 27%);
+        border: none;
+        outline: none;
+        top: 22px;
+        right:25px;
+
+    }      
+}
